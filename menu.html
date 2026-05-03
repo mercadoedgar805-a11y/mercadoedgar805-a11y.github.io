@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Menú</title>
+    <link rel="stylesheet" href="css/estilos.css">
+</head>
+<body>
+
+<header class="hero">
+    <h1>Menú</h1>
+</header>
+
+<nav class="menu">
+    <a href="index.html">Inicio</a>
+    <a href="menu.html">Menú</a>
+    <a href="contacto.html">Contacto</a>
+</nav>
+
+<section class="bloque">
+    <h2>Platos</h2>
+
+    <div class="galeria">
+
+        <div class="card">
+            <img src="img/hamburguesa.jpg">
+            <h3>Hamburguesa</h3>
+            <p>$8</p>
+            <button onclick="agregar('Hamburguesa',8)">Ordenar</button>
+        </div>
+
+        <div class="card">
+            <img src="img/pizza.jpg">
+            <h3>Pizza</h3>
+            <p>$10</p>
+            <button onclick="agregar('Pizza',10)">Ordenar</button>
+        </div>
+
+    </div>
+</section>
+
+<section class="bloque">
+    <h2>Carrito</h2>
+    <ul id="lista"></ul>
+    <p id="total">Total: $0</p>
+</section>
+
+<section class="bloque">
+    <h2>Factura</h2>
+    <button onclick="generarFactura()">Generar</button>
+    <div id="factura"></div>
+</section>
+
+<script src="js/carrito.js"></script>
+
+</body>
+</html>
